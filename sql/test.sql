@@ -1,0 +1,1 @@
+select id, name, pass from users 
