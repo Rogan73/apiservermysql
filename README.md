@@ -39,7 +39,7 @@ Auth: Basic dGVzdDp0ZXN0  // user1 , pass1 - то что в users.json
 SQL: select id, name, pass from users  
 
 env file  
-DB_HOST=
-DB_USER=
-DB_DATABASE=
-DB_PASSWORD=
+DB_HOST=  
+DB_USER=  
+DB_DATABASE=  
+DB_PASSWORD=  
