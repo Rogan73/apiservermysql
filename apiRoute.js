@@ -46,7 +46,8 @@ router.post('/:sqlFileName', async (req, res) => {
         rowData['REC_NO'] = REC_NO++;
         for (const fieldName in row) {
           if (row.hasOwnProperty(fieldName)) {
-            if ((fieldName == 'DATA') || (fieldName == 'TIM')) {
+            //if ((fieldName == 'DATA') || (fieldName == 'TIM')) {
+              if (fieldName.includes('DATA') || fieldName.includes('TIM')) {  
               rowData[fieldName] = convDate(row[fieldName]);
             } else {
               let val = row[fieldName];
