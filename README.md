@@ -37,3 +37,9 @@ SQL: select * from bludo_main where DATE(data_edit)=? and id=?
 POST:http://localhost:3000/api/ath_test  
 Auth: Basic dGVzdDp0ZXN0  // user1 , pass1 - то что в users.json  
 SQL: select id, name, pass from users  
+
+env file  
+DB_HOST=
+DB_USER=
+DB_DATABASE=
+DB_PASSWORD=
