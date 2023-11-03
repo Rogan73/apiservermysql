@@ -31,7 +31,7 @@ router.post('/:sqlFileName', async (req, res) => {
       if (Object.keys(queryParameters).length > 0) {
         // Если есть параметры, выполните запрос с ними
         //console.log('params', Object.values(queryParameters));
-        [results, fields] = await connection.query(sqlQuery, Object.values(queryParameters));
+        [results, fields] = await connection.query(sqlQuery, Object.values(queryParameters));  
       } else {
         // Если параметры отсутствуют, выполните запрос без них
         [results, fields] = await connection.query(sqlQuery);
