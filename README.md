@@ -15,25 +15,25 @@
   ### POST  (примеры)
  
 
-Простой запрос
-POST:http://localhost:3000/api/test
+Простой запрос  
+POST:http://localhost:3000/api/test  
 
 SQL: select id, name, pass from users 
 
-Запрос с параметром
-POST:http://localhost:3000/api/test_param
-BODY: {"id":100}
+Запрос с параметром  
+POST:http://localhost:3000/api/test_param  
+BODY: {"id":100}  
 SQL: select id, name, pass from users where id =?
 
-Запрос с несколькими параметрами
-POST: http://localhost:3000/api/test_param_d
+Запрос с несколькими параметрами  
+POST: http://localhost:3000/api/test_param_d  
 BODY: {
     "data_edit": "2017-08-25",
     "id": 3
-}
+}  
 SQL: select * from bludo_main where DATE(data_edit)=? and id=?
 
-Простой запрос с Basic Auth - запросы с префикосм ath_
+Простой запрос с Basic Auth - запросы с префикосм ath_  
 POST:http://localhost:3000/api/ath_test  
-Auth: Basic dGVzdDp0ZXN0  // user1 , pass1 - то что в users.json
-SQL: select id, name, pass from users
+Auth: Basic dGVzdDp0ZXN0  // user1 , pass1 - то что в users.json  
+SQL: select id, name, pass from users  
